@@ -40,3 +40,25 @@ body{
 .text{
     font-size: 22px;
 }
+
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.list-item{
+    margin-top: 20px;
+    font-size: 30px;
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+    top: 4px;
+}
