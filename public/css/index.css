@@ -70,3 +70,7 @@ body{
     filter: invert(59%) sepia(36%) saturate(539%) hue-rotate(123deg) brightness(92%) contrast(96%);
     color: #45aa9d;
 }
+
+#clouds{
+    display: none;
+}

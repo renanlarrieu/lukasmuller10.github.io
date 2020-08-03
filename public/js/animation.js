@@ -38,9 +38,6 @@ function onMouseDown(event) {
 }
 
 // SUN
-
-var group = []
-
 var decagon = new Path.RegularPolygon(new Point(120,120), 10, 80);
 decagon.fillColor = '#f3f38d';
 decagon.selected = true;
@@ -48,8 +45,25 @@ decagon.selected = true;
 var decagon2 = decagon.clone();
 decagon2.rotate(-90);
 
+//CLOUDS
+var raster = new Raster('clouds');
+
+// Move the raster to the center of the view
+raster.position = new Point(Math.ceil(view.size.width * 0.41), 100);
+raster.size = (200,200)
 
 
+var t = 0;
+var direction = 1;
+var move = setInterval(function() {
+    if (raster.position.x === Math.ceil(view.size.width * 0.4)){
+        direction = direction * -1;
+    } else if (raster.position.x === Math.ceil(view.size.width * 0.9)) {
+        direction = direction * -1;
+    }
+    raster.position = raster.position + new Point(1, Math.sin(t/10)/1.5) * direction;
+    t=t+1;
+},75); 
 
 function onFrame(event) {
     pathHeight += (center.y - mousePos.y - pathHeight) / 100;
