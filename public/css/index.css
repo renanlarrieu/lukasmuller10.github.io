@@ -5,7 +5,7 @@ body{
     font-family: 'Montserrat'!important;
 }
 .vl {
-    border-left: 1.5px solid black;
+    border-left: 1.5px solid darkgray;
     height: 300px;
     margin-left: 40px;
     margin-right: 40px;
@@ -29,16 +29,18 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
 }
 
 .title{
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 50px;
+    
+    color: rgb(69, 170, 157);
 }
 
 .text{
     font-size: 22px;
+    color: gray;
 }
 
 .buttons-div{
@@ -56,9 +58,15 @@ body{
     flex-direction: row;
 }
 
+.list-item:hover{
+    color: #45aa9d;
+}
+
 .icon{
     height: 30px;
     margin-right: 20px;
     position: relative;
     top: 4px;
+    filter: invert(59%) sepia(36%) saturate(539%) hue-rotate(123deg) brightness(92%) contrast(96%);
+    color: #45aa9d;
 }

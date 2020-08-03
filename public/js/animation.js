@@ -21,18 +21,6 @@ function initializePath() {
     path.add(view.bounds.bottomRight);
 }
 
-function onFrame(event) {
-    pathHeight += (center.y - mousePos.y - pathHeight) / 100;
-    for (var i = 1; i < points; i++) {
-        var sinSeed = event.count + (i + i % 10) * 100;
-        var sinHeight = Math.sin(sinSeed / 200) * pathHeight * 0.3;
-        var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
-        path.segments[i].point.y = yPos;
-    }
-    if (smooth)
-        path.smooth({ type: 'continuous' });
-}
-
 function onMouseMove(event) {
     mousePos = event.point;
 }
@@ -49,8 +37,36 @@ function onMouseDown(event) {
     }
 }
 
+// SUN
+
+var group = []
+
+var decagon = new Path.RegularPolygon(new Point(120,120), 10, 80);
+decagon.fillColor = '#f3f38d';
+decagon.selected = true;
+
+var decagon2 = decagon.clone();
+decagon2.rotate(-90);
+
+
+
+
+function onFrame(event) {
+    pathHeight += (center.y - mousePos.y - pathHeight) / 100;
+    for (var i = 1; i < points; i++) {
+        var sinSeed = event.count + (i + i % 10) * 100;
+        var sinHeight = Math.sin(sinSeed / 200) * pathHeight * 0.3;
+        var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
+        path.segments[i].point.y = yPos;
+    }
+    if (smooth){
+        path.smooth({ type: 'continuous' });
+    }
+    decagon.rotate(0.3);
+    decagon2.rotate(-0.3);
+}
+
 // Reposition the path whenever the window is resized:
 function onResize(event) {
-    initializePath();
+    initializePath(); 
 }
-//
