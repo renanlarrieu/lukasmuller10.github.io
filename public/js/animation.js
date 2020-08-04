@@ -52,7 +52,7 @@ function initializeSun() {
     var factor;
 
     if(size<500){
-        factor = 0.04;
+        factor = 0.02;
     } else if(size>=500 && size<900 ){
         factor = 0.09;
     } else {
@@ -79,15 +79,17 @@ function initializeClouds() {
     
     cloudsGroup.addChild(raster);
     // Move the raster to the center of the view
-    raster.position = new Point(Math.ceil(view.size.width * 0.41), view.size.height * 0.12);
-
+    
     var size = view.size.width;
 
     if(size<500){
+        raster.position = new Point(Math.ceil(view.size.width * 0.41), view.size.height * 0.09);
         raster.size = (view.size.width *0.3,view.size.width *0.3);
     } else if(size>=500 && size<900 ){
+        raster.position = new Point(Math.ceil(view.size.width * 0.41), view.size.height * 0.12);
         raster.size = (view.size.width *0.2,view.size.width *0.2)
     } else {
+        raster.position = new Point(Math.ceil(view.size.width * 0.41), view.size.height * 0.12);
         raster.size = (view.size.width *0.1,view.size.width *0.1)        
     }  
 
