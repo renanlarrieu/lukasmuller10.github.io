@@ -45,11 +45,7 @@ body{
 
 .link{
     text-decoration: none;
-    font-size: calc(15px + 0.35vw);
-    color: #45aa9d;
-}
-
-.link:hover{
+    font-size: calc(13px + 0.35vw);
     color: #45aa9d;
 }
 
