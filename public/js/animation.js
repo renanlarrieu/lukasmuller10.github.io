@@ -52,9 +52,9 @@ function initializeSun() {
     var factor;
 
     if(size<500){
-        factor = 0.02;
+        factor = 0.015;
     } else if(size>=500 && size<900 ){
-        factor = 0.09;
+        factor = 0.04;
     } else {
         factor = 0.08;
     }  
