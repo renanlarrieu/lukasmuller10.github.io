@@ -42,6 +42,16 @@ body{
     color: gray;
 }
 
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #45aa9d;
+}
+
+.link:hover{
+    color: #45aa9d;
+}
+
 .buttons-div{
     display: flex;
     flex-direction: column;
@@ -78,6 +88,20 @@ body{
 .localization{
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: -8px;
+}
+
+.pin{
+    height: 25px;
+    position: relative;
+    top: 10px;
+    opacity: 0.8;
+}
+
+.text-item{
+    margin-top:0px;
+    margin-bottom: 10px;
 }
 
 #clouds{
