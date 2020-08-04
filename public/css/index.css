@@ -72,7 +72,7 @@ body{
 }
 
 .icon{
-    height: calc(15px + 1vw);
+    height: calc(16px + 1vw);
     margin-right: 20px;
     position: relative;
     top: 4px;
@@ -157,12 +157,13 @@ body{
 @media only screen and (max-width: 470px) {
     .title{
         font-size: 28px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
 
     .icon{
         position: relative;
-        top: -7px;
-        margin-right: 15px;
+        top: -10px;
+        margin-right: 0px;
+        margin-left: 15px;
     }
 }
