@@ -38,7 +38,7 @@ function onMouseDown(event) {
 }
 
 // SUN
-var decagon = new Path.RegularPolygon(new Point(120,120), 10, 80);
+var decagon = new Path.RegularPolygon(new Point(view.size.width * 0.08,120), 10, 80);
 decagon.fillColor = '#f3f38d';
 decagon.selected = true;
 
@@ -83,4 +83,6 @@ function onFrame(event) {
 // Reposition the path whenever the window is resized:
 function onResize(event) {
     initializePath(); 
+    decagon.position = (view.size.width * 0.08,120);
+    decagon2.position = (view.size.width * 0.08,120);
 }

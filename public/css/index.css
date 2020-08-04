@@ -33,18 +33,18 @@ body{
 }
 
 .title{
-    font-size: 50px;
+    font-size: calc(25px + 1.5vw);
     color: rgb(69, 170, 157);
 }
 
 .text{
-    font-size: 20px;
+    font-size: calc(10px + 0.6vw);
     color: gray;
 }
 
 .link{
     text-decoration: none;
-    font-size: 20px;
+    font-size: calc(10px + 0.6vw);
     color: #45aa9d;
 }
 
@@ -60,7 +60,7 @@ body{
 
 .list-item{
     margin-top: 20px;
-    font-size: 30px;
+    font-size: calc(15px + 1vw);
     color: gray;
     text-decoration: none;
     display: flex;
@@ -72,7 +72,7 @@ body{
 }
 
 .icon{
-    height: 30px;
+    height: calc(15px + 1vw);
     margin-right: 20px;
     position: relative;
     top: 4px;
@@ -83,6 +83,7 @@ body{
 .localization-text{
     color: black;
     padding-left: 8px;
+    font-size: calc(12px + 0.2vw );
 }
 
 .localization{
@@ -106,4 +107,15 @@ body{
 
 #clouds{
     display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .content {
+        width: 90%;
+    }
+
+    .vl {
+        margin-left: 20px;
+        margin-right: 20px;
+    } 
 }
