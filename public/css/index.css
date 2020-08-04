@@ -38,13 +38,13 @@ body{
 }
 
 .text{
-    font-size: calc(10px + 0.65vw);
+    font-size: calc(15px + 0.35vw);
     color: gray;
 }
 
 .link{
     text-decoration: none;
-    font-size: calc(10px + 0.6vw);
+    font-size: calc(15px + 0.35vw);
     color: #45aa9d;
 }
 
@@ -72,7 +72,7 @@ body{
 }
 
 .icon{
-    height: calc(16px + 1vw);
+    height: calc(17.5px + 1vw);
     margin-right: 20px;
     position: relative;
     top: 4px;
@@ -151,6 +151,10 @@ body{
     
     .title{
         margin-right: 30px;
+    }
+    
+    .localization {
+        margin-bottom: 20px;
     }
 }
 
