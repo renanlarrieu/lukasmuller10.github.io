@@ -3,6 +3,7 @@ body{
     height: 100%;
     z-index: 5;
     font-family: 'Montserrat'!important;
+    overflow: hidden;
 }
 .vl {
     border-left: 1.5px solid darkgray;
@@ -38,7 +39,7 @@ body{
 }
 
 .text{
-    font-size: calc(15px + 0.35vw);
+    font-size: calc(13px + 0.35vw);
     color: gray;
 }
 
