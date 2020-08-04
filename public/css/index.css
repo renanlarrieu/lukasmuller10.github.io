@@ -38,7 +38,7 @@ body{
 }
 
 .text{
-    font-size: calc(10px + 0.6vw);
+    font-size: calc(10px + 0.65vw);
     color: gray;
 }
 
@@ -94,7 +94,7 @@ body{
 }
 
 .pin{
-    height: 25px;
+    height: calc(15px + 0.7vw);
     position: relative;
     top: 10px;
     opacity: 0.8;
@@ -109,6 +109,15 @@ body{
     display: none;
 }
 
+.share{
+    display: none;
+}
+
+.title-container{
+    display:flex;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 980px) {
     .content {
         width: 90%;
@@ -118,4 +127,42 @@ body{
         margin-left: 20px;
         margin-right: 20px;
     } 
+}
+
+@media only screen and (max-width: 700px) {
+    .vl{
+        display:none;
+    }
+
+    .buttons-div{
+        display: none;
+    }
+
+    .share{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon{
+        position: relative;
+        top: -7px;
+        margin-right: 25px;
+    }
+    
+    .title{
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .title{
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
+    .icon{
+        position: relative;
+        top: -7px;
+        margin-right: 15px;
+    }
 }

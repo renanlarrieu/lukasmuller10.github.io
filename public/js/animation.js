@@ -38,7 +38,7 @@ function onMouseDown(event) {
 }
 
 // SUN
-var decagon = new Path.RegularPolygon(new Point(view.size.width * 0.08,120), 10, 80);
+var decagon = new Path.RegularPolygon(new Point(view.size.width * 0.08,200), 10, 80);
 decagon.fillColor = '#f3f38d';
 decagon.selected = true;
 
