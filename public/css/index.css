@@ -34,12 +34,11 @@ body{
 
 .title{
     font-size: 50px;
-    
     color: rgb(69, 170, 157);
 }
 
 .text{
-    font-size: 22px;
+    font-size: 20px;
     color: gray;
 }
 
@@ -69,6 +68,16 @@ body{
     top: 4px;
     filter: invert(59%) sepia(36%) saturate(539%) hue-rotate(123deg) brightness(92%) contrast(96%);
     color: #45aa9d;
+}
+
+.localization-text{
+    color: black;
+    padding-left: 8px;
+}
+
+.localization{
+    display: flex;
+    flex-direction: row;
 }
 
 #clouds{
