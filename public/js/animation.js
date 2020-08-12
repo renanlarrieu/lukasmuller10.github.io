@@ -13,7 +13,7 @@ initializePath();
 initializeClouds();
 initializeSun();
 
-//WAVES 
+//WAVES
 function initializePath() {
     center = view.center;
     width = view.size.width;
@@ -57,13 +57,13 @@ function initializeSun() {
         factor = 0.04;
     } else {
         factor = 0.08;
-    }  
+    }
 
     var decagon = new Path.RegularPolygon(new Point(view.size.width * factor, view.size.height * factor * 1.9), 10, 80);
     decagon.fillColor = '#f3f38d';
     decagon.selected = true;
     group1.addChild(decagon);
-    
+
     var decagon2 = new Path.RegularPolygon(new Point(view.size.width * factor, view.size.height * factor * 1.9), 10, 80);
     decagon2.fillColor = '#f3f38d';
     decagon2.selected = true;
@@ -76,10 +76,10 @@ function initializeClouds() {
     cloudsGroup.removeChildren();
     //CLOUDS
     var raster = new Raster('clouds');
-    
+
     cloudsGroup.addChild(raster);
     // Move the raster to the center of the view
-    
+
     var size = view.size.width;
 
     if(size<500){
@@ -90,8 +90,8 @@ function initializeClouds() {
         raster.size = (view.size.width *0.2,view.size.width *0.2)
     } else {
         raster.position = new Point(Math.ceil(view.size.width * 0.41), view.size.height * 0.12);
-        raster.size = (view.size.width *0.1,view.size.width *0.1)        
-    }  
+        raster.size = (view.size.width *0.1,view.size.width *0.1)
+    }
 
     var t = 0;
     var direction = 1;
@@ -103,7 +103,7 @@ function initializeClouds() {
         }
         raster.position = raster.position + new Point(1, Math.sin(t/10)/1.5) * direction;
         t=t+1;
-    },75); 
+    },75);
 }
 
 
@@ -124,7 +124,7 @@ function onFrame(event) {
 
 // Reposition the path whenever the window is resized:
 function onResize(event) {
-    initializePath(); 
+    initializePath();
     initializeClouds();
     initializeSun();
 }

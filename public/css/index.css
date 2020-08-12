@@ -30,7 +30,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 80%;
 }
 
 .title{
@@ -123,7 +123,7 @@ body{
     .vl {
         margin-left: 20px;
         margin-right: 20px;
-    } 
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -145,11 +145,11 @@ body{
         top: -7px;
         margin-right: 25px;
     }
-    
+
     .title{
         margin-right: 30px;
     }
-    
+
     .localization {
         margin-bottom: 20px;
     }
