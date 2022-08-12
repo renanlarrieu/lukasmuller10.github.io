@@ -1,3 +1,6 @@
+baixar node js no google
+abrir terminal
+npm install
 npm start
 ctrl+s (atualiza a alteração)
-localhost:8080
+localhost:8080 (escrever no navegador)
