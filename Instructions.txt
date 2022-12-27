@@ -1,6 +1,8 @@
 baixar node js no google
 abrir terminal
+ctrl+p
 npm install
-npm start
+>npm 
+start 
 ctrl+s (atualiza a alteração)
 localhost:8080 (escrever no navegador)
